@@ -13,7 +13,7 @@ export default function Product() {
 
     const fetchproduct = async () => {
         try {
-            const response = await axios.get('http://127.0.0.1:8000/allproducts/');
+            const response = await axios.get('https://djangoreact.pythonanywhere.com/allproducts/');
             setProducts(response.data);
         } catch (error) {
             console.error(error);
